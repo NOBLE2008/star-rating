@@ -5,7 +5,7 @@ const StarRating = ({ maxRating }) => {
     const [rating, setRating] = useState(0)
   return Array.from({ length: maxRating }, (_, i) => {
     return (
-      <Star key={i}/>
+      <Star key={i} full={rating == i + 1}/>
     );
   });
 };
