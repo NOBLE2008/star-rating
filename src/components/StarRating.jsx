@@ -14,6 +14,7 @@ const StarRating = ({ maxRating }) => {
             onRate={() => {
               setRating(i + 1);
             }}
+            onHoverIn={setHoverRating(i + 1)}
           />
         );
       })}
