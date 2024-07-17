@@ -6,9 +6,16 @@ const StarRating = ({ maxRating }) => {
   return (
     <div className="star-container">
       {Array.from({ length: maxRating }, (_, i) => {
-        return <Star key={i} full={rating >= i + 1} onRate={() => {
-            setRating(i+1)
-        }}/>;
+        return (
+          <Star
+            key={i}
+            full={rating >= i + 1}
+            onRate={() => {
+              setRating(i + 1);
+            }}
+            on
+          />
+        );
       })}
     </div>
   );

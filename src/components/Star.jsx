@@ -1,8 +1,8 @@
 import React from "react";
 
-const Star = ({ full, onRate }) => {
+const Star = ({ full, onRate, onHoverIn, onHoverOut }) => {
   return full ? (
-    <span onClick={onRate}>
+    <span onClick={onRate} onMouseEnter={onHoverIn}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
@@ -13,7 +13,7 @@ const Star = ({ full, onRate }) => {
       </svg>
     </span>
   ) : (
-    <span onClick={onRate}>
+    <span onClick={onRate} onMouseEnter={onHoverIn}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
