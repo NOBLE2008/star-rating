@@ -1,11 +1,9 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import StarRating from "./components/StarRating";
 
 function App() {
-
-  return (
-
-  )
+  return <StarRating maxRating={10}/>;
 }
 
-export default App
+export default App;
