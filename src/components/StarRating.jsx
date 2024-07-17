@@ -3,6 +3,7 @@ import Star from "./Star";
 
 const StarRating = ({ maxRating }) => {
   const [rating, setRating] = useState(0);
+  const [hoverRating, setHoverRating] = useState(0)
   return (
     <div className="star-container">
       {Array.from({ length: maxRating }, (_, i) => {
@@ -13,7 +14,6 @@ const StarRating = ({ maxRating }) => {
             onRate={() => {
               setRating(i + 1);
             }}
-            on
           />
         );
       })}
