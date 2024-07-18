@@ -3,7 +3,11 @@ import "./App.css";
 import StarRating from "./components/StarRating";
 
 function App() {
-  return <StarRating maxRating={10}/>;
+  return (
+    <div>3
+      <StarRating maxRating={10}/>
+    </div>
+  );
 }
 
 export default App;
