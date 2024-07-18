@@ -14,6 +14,7 @@ const StarRating = ({ maxRating=5, color = 'black', showRating=true, setCustomRa
               full={hoverRating ? hoverRating >= i + 1 : rating >= i + 1}
               onRate={() => {
                 setRating(i + 1);
+                setCustomRatingState ? setCustomRatingState(i + 1) : null;
               }}
               color={color}
               onHoverIn={() => {
