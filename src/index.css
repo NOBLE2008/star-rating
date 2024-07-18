@@ -1,4 +1,4 @@
-.star-container{
+.star-container, .stars{
   display: flex;
 }
 

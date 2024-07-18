@@ -4,8 +4,8 @@ import StarRating from "./components/StarRating";
 
 function App() {
   return (
-    <div>3
-      <StarRating maxRating={10}/>
+    <div>
+      <StarRating maxRating={10} color="gold" />
     </div>
   );
 }
