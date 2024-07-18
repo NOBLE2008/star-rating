@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Star from "./Star";
 
-const StarRating = ({ maxRating=5, color = 'black' }) => {
+const StarRating = ({ maxRating=5, color = 'black', showRating=true}) => {
   const [rating, setRating] = useState(0);
   const [hoverRating, setHoverRating] = useState(0);
   return (
@@ -26,7 +26,7 @@ const StarRating = ({ maxRating=5, color = 'black' }) => {
           );
         })}
       </div>
-      {rating}
+      {showRating ? rating: ''}
     </div>
   );
 };
