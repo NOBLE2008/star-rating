@@ -2,6 +2,10 @@ import React from "react";
 
 const Star = ({ full, onRate, onHoverIn, onHoverOut, color, size }) => {
 
+  const style = {
+    width: `${size}px`
+  }
+
   return full ? (
     <span onClick={onRate} onMouseEnter={onHoverIn} onMouseLeave={onHoverOut} style={style}>
       <svg
