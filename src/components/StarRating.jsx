@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Star from "./Star";
 
-const StarRating = ({ maxRating, color }) => {
+const StarRating = ({ maxRating, color = 'black' }) => {
   const [rating, setRating] = useState(0);
   const [hoverRating, setHoverRating] = useState(0);
   return (
