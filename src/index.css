@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.star-container{
+  gap: 5px;
+}
+
 span{
   width: 20px;
 }
