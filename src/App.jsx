@@ -5,7 +5,7 @@ import StarRating from "./components/StarRating";
 function App() {
   return (
     <div>
-      <StarRating showRating={false}/>
+      <StarRating showRating={false} size={40}/>
     </div>
   );
 }
