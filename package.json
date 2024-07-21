@@ -3,6 +3,19 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "App.jsx",
+  "keywords": [
+    "react",
+    "star-rating",
+    "react-stars",
+    "star",
+    "react-star-rating"
+  ],
+  "author": {
+    "name": "Noble Benjamin",
+    "email": "nobleben2008@gmail.com",
+    "url": "https://NOBLE2008.github.com"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
